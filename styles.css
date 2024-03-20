@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.sidebar {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+bottom-links {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+nav {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.header {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.projects {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.annoucments {
+  grid-column-start: 4;
+}
+
+.trending {
+  grid-column-start: 4;
+}
+
+.top-right-header {
+  grid-column-start: 3;
+}
+
+.button-list {
+  grid-column-start: 2;
+  grid-column-end: -1;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.top-left-header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
