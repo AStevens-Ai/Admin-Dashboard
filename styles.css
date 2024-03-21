@@ -1,21 +1,41 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html {
+  background-color: #ede9fe;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 15px;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr 4fr 3fr;
+  gap: 25px;
 }
 
 .sidebar {
   grid-row-start: 1;
   grid-row-end: 5;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr;
   grid-template-columns: 1fr;
+  background-color: #c4b5fd;
+  gap: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+a:visited {
+  color:black
 }
 bottom-links {
   display: grid;
@@ -24,16 +44,27 @@ bottom-links {
   grid-row-end: 4;
 }
 
+hr{
+  margin: 10px 0px 10px 0px;
+}
+
 nav {
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(9, 1fr);
+  align-items: center;
+  justify-items: start;
+  
 }
 
 .header {
   grid-column-start: 2;
   grid-column-end: 6;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #ede9fe;
+  height: 30%;
 }
 
 .projects {
@@ -42,12 +73,30 @@ nav {
   grid-column-start: 2;
   grid-column-end: 4;
   display: grid;
-  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 12fr;
+}
+
+.projects h2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .card-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.cards {
+  background-color: #ddd6fe;
+  margin: 10px;
+  padding: 15px;
 }
 
 .annoucments {
@@ -59,17 +108,128 @@ nav {
 }
 
 .top-right-header {
-  grid-column-start: 3;
+  grid-column-start: 2;
+  display: flex;
+  grid-row-start: 1;
+  align-content:end;
+  justify-content:end;
 }
 
-.button-list {
-  grid-column-start: 2;
-  grid-column-end: -1;
-  display: grid;
-  grid-auto-flow: column;
+input {
+  width: 500px;
+  height: auto;
 }
+
 
 .top-left-header {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
+  display: flex;
 }
+
+.trending-card {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 15px;
+}
+.profile1, .profile2, .profile3, .profile4 {
+  margin-bottom: 15px;
+}
+
+.ann-card {
+  display: grid;
+  margin-top: 15px;
+  background-color: #ddd6fe;
+  padding: 15px;
+}
+
+.search, .notifs, .home, .profile, .messages, .history, .tasks, .communities, .setting, .support, .privacy{
+  width: 25px;
+  height: auto;
+}
+
+.sidebar-icon {
+  width: 35px;
+  height: auto;
+}
+
+
+.button-list {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons {
+  flex: 0 0 20%
+}
+
+.button-list button {
+  flex:1;
+  border-radius: 40px;
+  background-color: #c4b5fd;
+  font-size: 14px; 
+  margin: 0 5px; 
+}
+
+
+.sidebar-icon {
+  width: 35px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add margin between navigation items */
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.nav-item img {
+  width: 25px; /* Set image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Add spacing between image and text */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+
+.profile1,
+.profile2,
+.profile3,
+.profile4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile1 img,
+.profile2 img,
+.profile3 img,
+.profile4 img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  font-style: italic;
+}
+

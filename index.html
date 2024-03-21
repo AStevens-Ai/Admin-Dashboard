@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div class="grid-container">
-      <div class="sidebar">
-        <h1 class="page-header"><img src="" alt="image" /> Dashboard</h1>
-        <nav>
-          <a href="" class="nav-1">Home</a>
-          <a href="" class="nav-2">Profile</a>
-          <a href="" class="nav-3">Messages</a>
-          <a href="" class="nav-4">History</a>
-          <a href="" class="nav-5">Tasks</a>
-          <a href="" class="nav-6">Communities</a>
-        </nav>
-        <nav class="bottom-links">
-            <a href="" class="nav-7">Settings</a>
-            <a href="" class="nav-8">support</a>
-            <a href="" class="nav-9">Privacy</a>
-          </div>
-        </nav>
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+    <div class="sidebar">
+      <div class="nav-item page-logo">
+        <img src="./images/access-point.svg" alt="image" class="sidebar-icon"/> 
+        <h1 class="page-header">Dashboard
+      </h1></div>
+      <nav class="first-nav">
+        <div class="nav-item">
+          <img src="./images/home-circle.svg" alt="">
+          <a href="" class="nav-link">Home</a>
+        </div>
+        <div class="nav-item">
+          <img src="./images/account-circle.svg" alt="">
+          <a href="" class="nav-link">Profile</a>
+        </div>
+        <div class="nav-item">
+          <img src="./images/message.svg" alt="">
+          <a href="" class="nav-link">Messages</a>
+        </div>
+        <div class="nav-item">
+          <img src="./images/history.svg" alt="">
+          <a href="" class="nav-link">History</a>
+        </div>
+        <div class="nav-item">
+          <img src="./images/checkbox-marked-circle-auto-outline.svg" alt="">
+          <a href="" class="nav-link">Tasks</a>
+        </div>
+        <div class="nav-item">
+          <img src="./images/account-group-outline.svg" alt="">
+          <a href="" class="nav-link">Communities</a>
+        </div>
+      </nav>
+      <nav class="settings">
+        <div class="nav-item">
+          <img src="./images/cog.svg" alt="">
+          <a href="" class="nav-link">Settings</a>
+        </div>
+        <div class="nav-item">
+          <img src="./images/face-agent.svg" alt="">
+          <a href="" class="nav-link">Support</a>
+        </div>
+        <div class="nav-item">
+          <img src="./images/lock.svg" alt="">
+          <a href="" class="nav-link">Privacy</a>
+        </div>
+      </nav>
+    </div>
       <div class="header">
         <div class="top-left-header">
-            <img src="" alt="search-img" class="search">
+            <img src="./images/magnify.svg" alt="search-img" class="search">
             <input type="search">
         </div>
-        <div class="top-right-header">
-            <a href="" class="notifs">notif</a>
+        <div class="top-right-header .nav-item">
+            <img src="./images/bell-badge.svg" class="notifs"/>
             <img class="small-pfp" src="" alt="pfp">
-            <h2 class="userName-small">bob</h2>
+            <h2 class="userName-small">Bob Stone</h2>
         </div>
-            <div class="bottom-left-header">
+        <div class="bottom-left-header">
             <img src="" alt="big-pfp" class="big-pfp">
             <span>Hi there,</span>
-            <h1 class="userName-big">bob</h1>
+            <h1 class="userName-big">Bob Stone (@bobStone)</h1>
         </div>
         <div class="button-list">
             <button class="buttons">New</button>
@@ -78,8 +110,34 @@
         </div>
       <div class="announcements">
         <h2>Announcements</h2>
+        <div class="ann-card">
+          <h3>Test</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet risus feugiat.</p>
+          <hr>
+          <h3>Test</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet risus feugiat.</p>
+          <hr>
+          <h3>Test</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed turpis tincidunt id aliquet risus feugiat.</p>
+        </div>
       </div>
-      <div class="trending"><h2>Trending</h2></div>
+      <div class="trending">
+        <h2>Trending</h2>
+        <div class="trending-card">
+          <div class="profile1">
+           <img src="" alt="pfp"><span>@tegan</span><p class="profile-info"> World Peace Builder</p>
+          </div>
+          <div class="profile2">
+            <img src="" alt="pfp"><span>@morgan</span><p class="profile-info"> Super Cool Project</p>
+          </div>
+          <div class="profile3">
+          <img src="" alt="pfp"><span>@kendall</span><p class="profile-info"> Life Changing App</p>
+        </div>
+        <div class="profile4">
+         <img src="" alt="pfp"><span>@alex</span> <p class="profile-info"> No Traffic Maker</p></div>
+          </div>
+          </div>
+
     </div>
   </body>
 </html>
